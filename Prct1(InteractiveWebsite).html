@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amrutvahini College of Engineering</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: whitesmoke; }
+    .header { background-color: rgb(146, 17, 127); color: black; text-align: center; padding: 40px 0; font-size: 30px; font-weight: bold; }
+    .navbar { margin: 0; background-color: darkslategray; padding: 10px 0; text-align: center; }
+    .navbar a { color: white; text-decoration: none; padding: 14px 20px; display: inline-block; }
+    .navbar a:hover { background-color: mediumseagreen; }
+    .content { padding: 20px; text-align: center; }
+    .row { display: flex; justify-content: space-around; margin-top: 30px; }
+    .card { background: white; padding: 20px; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; border-radius: 8px; margin: 10px; }
+    .card h4 { font-size: 20px; color: darkslategray; }
+    .card p { font-size: 24px; font-weight: bold; color: black; }
+    .course-list { list-style: none; padding: 0; }
+    .course-list li { background: lightgray; margin: 10px 0; padding: 12px; border-radius: 5px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <div class="header">Amrutvahini College of Engineering</div>
+  <div class="navbar">
+    <a href="home.html">Home</a><a href="students.html">Students</a><a href="#" data-toggle="modal" data-target="#coursesModal">Courses</a>
+    <a href="faculty.html">Faculty</a><a href="reports.html">Reports</a>
+  </div>
+  <div class="content">
+    <h3>Statistics Overview</h3>
+    <div class="row">
+      <div class="card"><h4>Total Students</h4><p>2,000</p></div>
+      <div class="card"><h4>Total Faculty</h4><p>250</p></div>
+      <div class="card"><h4>Courses Offered</h4><p>35</p></div>
+    </div>
+    <div class="row">
+      <div class="card"><h4>Placements</h4><p>350+</p></div>
+      <div class="card"><h4>Departments</h4><p>12</p></div>
+      <div class="card"><h4>Events</h4><p>25</p></div>
+    </div>
+  </div>
+  <div id="coursesModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Available Courses</h4>
+        </div>
+        <div class="modal-body">
+          <ul class="course-list">
+            <li>Computer Engineering</li><li>Information Technology</li><li>Mechanical Engineering</li>
+            <li>Electrical Engineering</li><li>Electronics & Telecommunication (ENTC)</li>
+            <li>Electronics & Computer Engineering (E&C)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
